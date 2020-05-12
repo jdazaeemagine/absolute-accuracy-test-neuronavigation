@@ -28,11 +28,8 @@ The undefined values (above mentioned as X) are specified on the config.xml file
   - "Motor_Position_X", "Motor_Position_Y", "Motor_Position_Z": this values are the coordinates (x,y,z) of the coil central point on its motor position (marked as number 1)
   - "Treatment_Target_Displaced_Position_X": this value define the displacement on the X-axis from the motor target to the threatment target (marked as number 2). As aforementioned, this value is 0.055 mm (value defined on stimguide)
   - "Displaced_Position_Y": this value represent the displacement on the Y-axis from the motor target to the position marked as number 3. 
-  - "Rotation_Angle": this value define the rotation difference between the motor position and the position marked as number 4. 
-
-
-
-
+  - "Rotation_Angle": this value define the rotation difference between the motor position and the position marked as number 4. In other words, Rotation angle = rotation(position4) - rotation(position(1). This value are obtained from the quarternions using the following expression: 
+  
 
 
 

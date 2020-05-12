@@ -1,0 +1,362 @@
+{
+  "Targets": [
+    {
+      "Id": "e79e9e38-5699-48e8-98f1-73c6b74d3e51",
+      "Name": "MOTOR_20200428_0148",
+      "CreatedTime": "2020-04-28T08:49:45.990053Z",
+      "Type": 0,
+      "Rotation": {
+        "X": 0.0107416306,
+        "Y": -0.005660507,
+        "Z": -0.7060329,
+        "W": 0.708075047,
+        "IsIdentity": false
+      },
+      "Position": {
+        "X": -0.106747583,
+        "Y": 0.09125472,
+        "Z": 0.00220259279
+      },
+      "Offset": 0.0,
+      "EmgLatency": 0.0,
+      "EmgPeakToPeak": 0.0,
+      "Intensity": {
+        "Value": 50.0
+      },
+      "Target": null,
+      "IsDistanceWithinTolerance": false,
+      "IsContactWithinTolerance": false,
+      "IsRotationWithinTolerance": false,
+      "IsTiltWithinTolerance": false,
+      "Time": "2020-04-28T08:49:22.537464Z"
+    },
+    {
+      "Id": "c1e85473-af81-4236-88d6-1394d13f55c9",
+      "Name": "TREAT_20200428_0149_1",
+      "CreatedTime": "2020-04-28T08:51:26.091475Z",
+      "Type": 0,
+      "Rotation": {
+        "X": 0.009035171,
+        "Y": -0.005163222,
+        "Z": -0.702398062,
+        "W": 0.7117083,
+        "IsIdentity": false
+      },
+      "Position": {
+        "X": -0.05165394,
+        "Y": 0.09072658,
+        "Z": 0.00389931188
+      },
+      "Offset": 0.0,
+      "EmgLatency": 0.0,
+      "EmgPeakToPeak": 0.0,
+      "Intensity": {
+        "Value": 50.0
+      },
+      "Target": null,
+      "IsDistanceWithinTolerance": false,
+      "IsContactWithinTolerance": false,
+      "IsRotationWithinTolerance": false,
+      "IsTiltWithinTolerance": false,
+      "Time": "2020-04-28T08:51:04.2204355Z"
+    }
+  ],
+  "Stimuli": [
+    {
+      "Rotation": {
+        "X": 0.0107067777,
+        "Y": -0.009470243,
+        "Z": -0.697111249,
+        "W": 0.716820538,
+        "IsIdentity": false
+      },
+      "Position": {
+        "X": -0.0524781458,
+        "Y": 0.0881643444,
+        "Z": 0.0026556782
+      },
+      "Offset": 0.0,
+      "EmgLatency": 0.0,
+      "EmgPeakToPeak": 0.0,
+      "Intensity": {
+        "Value": 50.0
+      },
+      "Target": {
+        "Id": "c1e85473-af81-4236-88d6-1394d13f55c9",
+        "Name": "TREAT_20200428_0149_1",
+        "CreatedTime": "0001-01-01T00:00:00",
+        "Type": 0,
+        "Rotation": {
+          "X": 0.009036,
+          "Y": -0.005163,
+          "Z": -0.702398,
+          "W": 0.711708,
+          "IsIdentity": false
+        },
+        "Position": {
+          "X": -0.051654,
+          "Y": 0.090727,
+          "Z": 0.003899
+        },
+        "Offset": 0.0,
+        "EmgLatency": 0.0,
+        "EmgPeakToPeak": 0.0,
+        "Intensity": null,
+        "Target": null,
+        "IsDistanceWithinTolerance": false,
+        "IsContactWithinTolerance": false,
+        "IsRotationWithinTolerance": false,
+        "IsTiltWithinTolerance": false,
+        "Time": "0001-01-01T00:00:00"
+      },
+      "IsDistanceWithinTolerance": true,
+      "IsContactWithinTolerance": false,
+      "IsRotationWithinTolerance": true,
+      "IsTiltWithinTolerance": true,
+      "Time": "2020-04-28T09:01:04.0703334Z"
+    },
+    {
+      "Rotation": {
+        "X": 0.01151496,
+        "Y": -0.008715502,
+        "Z": -0.6982783,
+        "W": 0.7156807,
+        "IsIdentity": false
+      },
+      "Position": {
+        "X": -0.05154429,
+        "Y": 0.0505415648,
+        "Z": 0.00281820772
+      },
+      "Offset": 0.0,
+      "EmgLatency": 0.0,
+      "EmgPeakToPeak": 0.0,
+      "Intensity": {
+        "Value": 50.0
+      },
+      "Target": {
+        "Id": "c1e85473-af81-4236-88d6-1394d13f55c9",
+        "Name": "TREAT_20200428_0149_1",
+        "CreatedTime": "0001-01-01T00:00:00",
+        "Type": 0,
+        "Rotation": {
+          "X": 0.009036,
+          "Y": -0.005163,
+          "Z": -0.702398,
+          "W": 0.711708,
+          "IsIdentity": false
+        },
+        "Position": {
+          "X": -0.051654,
+          "Y": 0.090727,
+          "Z": 0.003899
+        },
+        "Offset": 0.0,
+        "EmgLatency": 0.0,
+        "EmgPeakToPeak": 0.0,
+        "Intensity": null,
+        "Target": null,
+        "IsDistanceWithinTolerance": false,
+        "IsContactWithinTolerance": false,
+        "IsRotationWithinTolerance": false,
+        "IsTiltWithinTolerance": false,
+        "Time": "0001-01-01T00:00:00"
+      },
+      "IsDistanceWithinTolerance": false,
+      "IsContactWithinTolerance": true,
+      "IsRotationWithinTolerance": true,
+      "IsTiltWithinTolerance": true,
+      "Time": "2020-04-28T09:02:15.132092Z"
+    },
+    {
+      "Rotation": {
+        "X": 0.0144464672,
+        "Y": -0.0126666632,
+        "Z": -0.918410659,
+        "W": 0.3951619,
+        "IsIdentity": false
+      },
+      "Position": {
+        "X": -0.0714511052,
+        "Y": 0.03893201,
+        "Z": 0.00124686793
+      },
+      "Offset": 0.0,
+      "EmgLatency": 0.0,
+      "EmgPeakToPeak": 0.0,
+      "Intensity": {
+        "Value": 50.0
+      },
+      "Target": {
+        "Id": "c1e85473-af81-4236-88d6-1394d13f55c9",
+        "Name": "TREAT_20200428_0149_1",
+        "CreatedTime": "0001-01-01T00:00:00",
+        "Type": 0,
+        "Rotation": {
+          "X": 0.009036,
+          "Y": -0.005163,
+          "Z": -0.702398,
+          "W": 0.711708,
+          "IsIdentity": false
+        },
+        "Position": {
+          "X": -0.051654,
+          "Y": 0.090727,
+          "Z": 0.003899
+        },
+        "Offset": 0.0,
+        "EmgLatency": 0.0,
+        "EmgPeakToPeak": 0.0,
+        "Intensity": null,
+        "Target": null,
+        "IsDistanceWithinTolerance": false,
+        "IsContactWithinTolerance": false,
+        "IsRotationWithinTolerance": false,
+        "IsTiltWithinTolerance": false,
+        "Time": "0001-01-01T00:00:00"
+      },
+      "IsDistanceWithinTolerance": false,
+      "IsContactWithinTolerance": false,
+      "IsRotationWithinTolerance": false,
+      "IsTiltWithinTolerance": true,
+      "Time": "2020-04-28T09:05:19.3899624Z"
+    },
+    {
+      "Rotation": {
+        "X": 0.270705581,
+        "Y": -0.273883164,
+        "Z": -0.647007942,
+        "W": 0.6580937,
+        "IsIdentity": false
+      },
+      "Position": {
+        "X": -0.07698536,
+        "Y": 0.09030728,
+        "Z": 0.048370678
+      },
+      "Offset": 0.0,
+      "EmgLatency": 0.0,
+      "EmgPeakToPeak": 0.0,
+      "Intensity": {
+        "Value": 50.0
+      },
+      "Target": {
+        "Id": "c1e85473-af81-4236-88d6-1394d13f55c9",
+        "Name": "TREAT_20200428_0149_1",
+        "CreatedTime": "0001-01-01T00:00:00",
+        "Type": 0,
+        "Rotation": {
+          "X": 0.009036,
+          "Y": -0.005163,
+          "Z": -0.702398,
+          "W": 0.711708,
+          "IsIdentity": false
+        },
+        "Position": {
+          "X": -0.051654,
+          "Y": 0.090727,
+          "Z": 0.003899
+        },
+        "Offset": 0.0,
+        "EmgLatency": 0.0,
+        "EmgPeakToPeak": 0.0,
+        "Intensity": null,
+        "Target": null,
+        "IsDistanceWithinTolerance": false,
+        "IsContactWithinTolerance": false,
+        "IsRotationWithinTolerance": false,
+        "IsTiltWithinTolerance": false,
+        "Time": "0001-01-01T00:00:00"
+      },
+      "IsDistanceWithinTolerance": false,
+      "IsContactWithinTolerance": false,
+      "IsRotationWithinTolerance": true,
+      "IsTiltWithinTolerance": false,
+      "Time": "2020-04-28T09:06:22.6792232Z"
+    }
+  ],
+  "Coils": [
+    {
+      "SerialNumber": null,
+      "ProductCode": "MT",
+      "CoilName": "MT",
+      "TrackerProductCode": null,
+      "TrackerVersion": 0
+    },
+    {
+      "SerialNumber": null,
+      "ProductCode": "Ez",
+      "CoilName": "Ez",
+      "TrackerProductCode": null,
+      "TrackerVersion": 0
+    },
+    {
+      "SerialNumber": null,
+      "ProductCode": "MT",
+      "CoilName": "testcoil",
+      "TrackerProductCode": null,
+      "TrackerVersion": 0
+    },
+    {
+      "SerialNumber": null,
+      "ProductCode": "Ez",
+      "CoilName": "testcoil2",
+      "TrackerProductCode": null,
+      "TrackerVersion": 0
+    }
+  ],
+  "Waveforms": [
+    {
+      "WorkflowId": "6fe14486-08b1-4629-972e-d18adfb36a7c",
+      "FilePath": "C:\\Users\\stimguide\\Documents\\StimGuide\\Studies\\newTestRelease\\20200428_014220\\"
+    },
+    {
+      "WorkflowId": "4a46bdbf-1abb-42f3-a6e6-3a6878842a0f",
+      "FilePath": "C:\\Users\\stimguide\\Documents\\StimGuide\\Studies\\newTestRelease\\20200428_014754\\"
+    },
+    {
+      "WorkflowId": "07f8dc95-1cd1-40ef-8ad5-b8f70ff662c0",
+      "FilePath": "C:\\Users\\stimguide\\Documents\\StimGuide\\Studies\\newTestRelease\\20200428_015206\\"
+    }
+  ],
+  "Landmarks": [
+    {
+      "Time": "2020-04-28T08:48:36.2148265Z",
+      "LeftEar": {
+        "X": 0.164488614,
+        "Y": -0.06706603,
+        "Z": -0.013711378
+      },
+      "Nasion": {
+        "X": 0.065681085,
+        "Y": -0.064931564,
+        "Z": -0.0172997043
+      },
+      "RightEar": {
+        "X": 0.0455985479,
+        "Y": 0.0275706612,
+        "Z": -0.0189878233
+      }
+    },
+    {
+      "Time": "2020-04-28T08:52:40.6436806Z",
+      "LeftEar": {
+        "X": 0.16461511,
+        "Y": -0.06681773,
+        "Z": -0.0135521181
+      },
+      "Nasion": {
+        "X": 0.06517476,
+        "Y": -0.06498914,
+        "Z": -0.0173779782
+      },
+      "RightEar": {
+        "X": 0.0494022071,
+        "Y": 0.0283860117,
+        "Z": -0.019070521
+      }
+    }
+  ],
+  "Settings": "[{\"Name\":\"TmsToleranceInPlaneDistanceToTarget\",\"Value\":5},{\"Name\":\"TmsToleranceNormalDistanceToTarget\",\"Value\":1},{\"Name\":\"TmsToleranceTiltToTarget\",\"Value\":10},{\"Name\":\"TmsToleranceRotationToTarget\",\"Value\":5},{\"Name\":\"TmsToleranceMinDistanceToHotspot\",\"Value\":52.5},{\"Name\":\"TmsToleranceMaxDistanceToHotspot\",\"Value\":57.5},{\"Name\":\"TmsToleranceRotationToHotspot\",\"Value\":5},{\"Name\":\"TmsToleranceOffsetTargetPlaneToHotspot\",\"Value\":5},{\"Name\":\"TmsToleranceWavfilePlayOnLostTarget\",\"Value\":true},{\"Name\":\"TmsToleranceWavfilePath\",\"Value\":\"C:\\\\Windows\\\\Media\\\\ding.wav\"},{\"Name\":\"RunEMG\",\"Value\":true},{\"Name\":\"MappingMontage\",\"Value\":\"1ChannelL3H500N50\"},{\"Name\":\"EnableAdditionalLandmarks\",\"Value\":true},{\"Name\":\"EnableAdditionalTargets\",\"Value\":true},{\"Name\":\"RegistrationValidity\",\"Value\":60}]",
+  "IsSettingsEditable": false
+}

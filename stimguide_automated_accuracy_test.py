@@ -130,7 +130,7 @@ def main():
         df_config = config2dataframe(config_file)
         df_results = pd.DataFrame(Checking_results(df_config, df_targets, df_stimuli))
         
-        final_result = df_results.all(axis='columns')[2]
+        final_result = df_results.all(axis='columns')[3]
         
         if final_result is np.bool_(True):
             final_result_str = "PASSED"
@@ -138,10 +138,11 @@ def main():
             final_result_str = "FAILED"
 
         
-        mask = df_results.applymap(type) == bool
         d = {True: 'PASSED', False: 'FAILED'}
+
+        print(df_results.shape)
         
-        df_results = df_results.where(mask, df_results.replace(d))
+        df_results.iloc[df_results.shape[0]-1]= df_results.iloc[df_results.shape[0]-1].replace(d)
         
         date = datetime.datetime.now().strftime("%Y.%m.%d %H-%M-%S")
         output_file_name = date +"_StimGuide_Automated_Accuracy_test_Result="+final_result_str+".csv"
@@ -151,13 +152,10 @@ def main():
         df_results.index = ["Measured value", "Expected value", "Distance", "Result"]
         
         df_results.to_csv(output_file_name, sep = ',',float_format='%.4f', index=False, encoding='utf-8')
-         
-        
+
         print("Test results save successfully under: "+ path)
         
 
   
 if __name__ == "__main__":
     main()
-
-    

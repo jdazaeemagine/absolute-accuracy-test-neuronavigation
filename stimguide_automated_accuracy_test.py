@@ -70,20 +70,24 @@ def Checking_results(df_config, df_targets, df_stimuli):
     measured_param['Motor_Position_Z'] = df_targets.iloc[0]['PositionZ']
     measured_param['Treatment_Target_Displaced_Position_X'] = df_stimuli.iloc[0]['PositionX'] - df_targets.iloc[0]['PositionX']
     measured_param['Displaced_Position_Y'] = df_stimuli.iloc[1]['PositionY'] - df_targets.iloc[0]['PositionY']
-    measured_param['Rotation_Angle'] = rotation(df_stimuli.iloc[2][['RotationX', 'RotationY', 'RotationZ', 'RotationW']]) - rotation(df_targets.iloc[0][['RotationX', 'RotationY', 'RotationZ', 'RotationW']]) 
-    measured_param['Tilt_Angle'] = tilt(df_targets.iloc[0][['RotationX', 'RotationY', 'RotationZ', 'RotationW']]) - tilt(df_stimuli.iloc[3][['RotationX', 'RotationY', 'RotationZ', 'RotationW']])
+    measured_param['Displaced_Position_Z'] = df_stimuli.iloc[2]['PositionZ'] - df_targets.iloc[0]['PositionZ']
+    measured_param['Rotation_Angle'] = rotation(df_stimuli.iloc[3][['RotationX', 'RotationY', 'RotationZ', 'RotationW']]) - rotation(df_targets.iloc[0][['RotationX', 'RotationY', 'RotationZ', 'RotationW']]) 
+    measured_param['Tilt_Angle'] = tilt(df_targets.iloc[0][['RotationX', 'RotationY', 'RotationZ', 'RotationW']]) - tilt(df_stimuli.iloc[4][['RotationX', 'RotationY', 'RotationZ', 'RotationW']])
     
     
     output_dict = {}
     
-    for name in df_config.columns[0:7]:
+    print(df_config)
+    
+    for name in df_config.columns[0:8]:
         
         if name.find("Angles") is not -1:
             
             param = measured_param[name]
             specification = df_config.iloc[0][name] 
             dist = distance(param, specification)
-            output_dict[name] = [param, dist, abs(distance)<precision_cms]
+            print(specification)
+            output_dict[name] = [param, specification, dist, abs(distance)<precision_cms]
             
             
         else:
@@ -91,7 +95,7 @@ def Checking_results(df_config, df_targets, df_stimuli):
             param = measured_param[name]
             specification = df_config.iloc[0][name] 
             dist = distance(param, specification)
-            output_dict[name] = [param, dist, abs(dist)<precision_angle]
+            output_dict[name] = [param, specification, dist, abs(dist)<precision_angle]
             
     
     return output_dict
@@ -139,13 +143,17 @@ def main():
         
         df_results = df_results.where(mask, df_results.replace(d))
         
-        date = datetime.datetime.now().strftime("%Y-%m-%d %X")
-        output_file_name = date + "_StimGuide_Automated_Accuracy_test_Result: "+final_result_str+".csv"
+        date = datetime.datetime.now().strftime("%Y.%m.%d %H-%M-%S")
+        output_file_name = date +"_StimGuide_Automated_Accuracy_test_Result="+final_result_str+".csv"
         
-        df_results.to_csv(output_file_name, sep = ',',float_format='%.4f', index=False)
+        path = os.path.join(os.path.os.path.dirname(os.path.realpath(__file__)), output_file_name)
         
-        print("Test results save successfully under: "+ 
-              os.path.dirname(os.path.realpath(__file__))+"/"+ output_file_name)
+        df_results.index = ["Measured value", "Expected value", "Distance", "Result"]
+        
+        df_results.to_csv(output_file_name, sep = ',',float_format='%.4f', index=False, encoding='utf-8')
+         
+        
+        print("Test results save successfully under: "+ path)
         
 
   

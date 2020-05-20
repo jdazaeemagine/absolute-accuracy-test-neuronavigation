@@ -8,11 +8,14 @@ import math
 import datetime
 import shutil
 
+# Convert the angles from radians to degrees
 def degree(x):
     pi=math.pi
     degree=(x*180)/pi
     return degree
 
+# Calculate the tilt deviation of the coil from
+# the quaternion vector (RotationX, RotationY, RotationZ, Rotation W)
 def tilt(quaternion):
     
     q1 = quaternion[0]
@@ -22,6 +25,8 @@ def tilt(quaternion):
     
     return degree(math.atan2(2*(q1*q4 + q2*q3), 1 -2*(q3**2 + q4**2)))
 
+# Calculate the rotation deviation of the coil from
+# the quaternion vector (RotationX, RotationY, RotationZ, Rotation W)
 def rotation(quaternion):
     
     q1 = quaternion[0]
@@ -29,12 +34,13 @@ def rotation(quaternion):
     q3 = quaternion[2]
     q4 = quaternion[3]
 
-    
     left_side = math.sqrt(q1**2+q2**2+q3**2)
     right_side = q4
     return degree(2*math.atan2(left_side, right_side))
     #return math.atan2(2*(q1*q2 + q3*q4), 1 -2*(q2**2 + q3**2))
 
+# Getting as input the name of the file, Convert the .xml config file into a pandas dataframe.
+# Each column of this dataframe contains a specific parameter
 def config2dataframe(file_name):
     root = ET.parse(file_name).getroot()
     
@@ -47,16 +53,22 @@ def config2dataframe(file_name):
 
     return pd.DataFrame(aux, index = [0]).astype('double')
 
+# When the script is not called properly, this message will pop up on the terminal window.
 def printusage():
     
     print("Incorrect use of the script")
     print("Correct use: python horizon_accuracy_test.py <json_file_name> <config_file_name>")
 
-
+#Calculate the absolute distance between two values
 def distance(x, y):
     
     return abs(x-y)
-    
+
+# Receives as input the config, targets and stimuli dataframe.
+# In a dictionary will store
+# [measured values, expected values,
+# distance between measured and expected values, Results (if it is above the threshold)]
+# sorted by name of the value
 def Checking_results(df_config, df_targets, df_stimuli):
     
     
@@ -99,7 +111,8 @@ def Checking_results(df_config, df_targets, df_stimuli):
 
     
 def main():
-    
+
+
     if len(sys.argv)<3:
         printusage()
         
@@ -147,8 +160,6 @@ def main():
         df_results.to_csv(output_file_name, sep = ',',float_format='%.4f')
 
         print("Test results save successfully under: "+ path)
-        
-
   
 if __name__ == "__main__":
     main()

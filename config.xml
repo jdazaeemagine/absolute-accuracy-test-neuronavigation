@@ -1,19 +1,19 @@
 <config>
-	<MotorTarget>
-		<value name="Motor_Position_X">-0.107</value>
-		<value name="Motor_Position_Y">0.090</value>
-		<value name="Motor_Position_Z">0.0</value>
-	</MotorTarget>
+	<Initial_Position>
+		<value name="Initial_Position_X">-0.107</value>
+		<value name="Initial_Position_Y">0.090</value>
+		<value name="Initial_Position_Z">0.0</value>
+	</Initial_Position>
 	<Stimulus_parameters>
-        <value name="Treatment_Target_Displaced_Position_X">0.055</value>
+        <value name="Displaced_Position_X">0.055</value>
 		<value name="Displaced_Position_Y">-0.04</value>
 		<value name="Displaced_Position_Z">0.048</value>
 		<value name="Rotation_Angle">45</value>
 		<value name="Tilt_Angle">45</value>
 	</Stimulus_parameters>
-	<options>
+	<Options>
 		<value name="Precision_angle">0.5</value>		
 		<value name="Precision_m">0.005</value>
-    	</options>
+    	</Options>
 </config> 
 

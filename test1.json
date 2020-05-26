@@ -64,6 +64,59 @@
   "Stimuli": [
     {
       "Rotation": {
+        "X": 0.0122553864,
+        "Y": -0.00261799432,
+        "Z": -0.7019185,
+        "W": 0.7121471,
+        "IsIdentity": false
+      },
+      "Position": {
+        "X": -0.108356871,
+        "Y": 0.09031656,
+        "Z": 0.00332440622
+      },
+      "Offset": 0.0,
+      "EmgLatency": 0.0,
+      "EmgPeakToPeak": 0.0,
+      "Intensity": {
+        "Value": 50.0
+      },
+      "Target": {
+        "Id": "c66e359c-2207-4fbf-8015-487d1da93fc7",
+        "Name": "TREAT_20200520_0134_1",
+        "CreatedTime": "0001-01-01T00:00:00",
+        "Type": 0,
+        "Rotation": {
+          "X": 0.012131,
+          "Y": -0.005604,
+          "Z": -0.699721,
+          "W": 0.714291,
+          "IsIdentity": false
+        },
+        "Position": {
+          "X": -0.053432,
+          "Y": 0.089503,
+          "Z": 0.003888
+        },
+        "Offset": 0.0,
+        "EmgLatency": 0.0,
+        "EmgPeakToPeak": 0.0,
+        "Intensity": null,
+        "Target": null,
+        "IsDistanceWithinTolerance": false,
+        "IsContactWithinTolerance": false,
+        "IsRotationWithinTolerance": false,
+        "IsTiltWithinTolerance": false,
+        "Time": "0001-01-01T00:00:00"
+      },
+      "IsDistanceWithinTolerance": true,
+      "IsContactWithinTolerance": true,
+      "IsRotationWithinTolerance": true,
+      "IsTiltWithinTolerance": true,
+      "Time": "2020-05-20T08:37:26.0296171Z"
+    },
+    {
+      "Rotation": {
         "X": 0.008218961,
         "Y": -0.005462076,
         "Z": -0.7015668,

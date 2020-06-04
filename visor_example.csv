@@ -1,0 +1,8 @@
+visor2 software version,Subject,Session,Stimulus ID,Stimulation intensity (%),TMS stimulus time (clock time),TMS coil,Coordinate system,Coil position x (mm),Coil position y (mm),Coil position z (mm),Coil rotation x,Coil rotation y,Coil rotation z,Coil rotation w,rTMS stimulus,rTMS count,rTMS frequency (hz),Errors
+2.5.3.50294,UniFreiburg_test1,20200604_1211,1,30,12:24:34.523,Ez,nasion-ear,-110.0035,88.34029,0.9139894,0.00563181,-0.01462069,-0.7057384,0.7082993,no,NULL,NULL,none
+2.5.3.50294,UniFreiburg_test1,20200604_1211,4,30,12:26:38.648,Ez,nasion-ear,-54.41442,89.01881,0.941381,0.009398825,-0.01486987,-0.7051321,0.7088578,no,NULL,NULL,none
+2.5.3.50294,UniFreiburg_test1,20200604_1211,6,30,12:26:52.351,Ez,nasion-ear,-54.77702,48.89388,2.053171,0.00999561,-0.01157938,-0.7031712,0.710856,no,NULL,NULL,none
+2.5.3.50294,UniFreiburg_test1,20200604_1211,7,30,12:26:52.523,Ez,nasion-ear,-96.4687,75.53528,48.93966,0.0104186,-0.01180808,-0.6975216,0.7163908,no,NULL,NULL,none
+2.5.3.50294,UniFreiburg_test1,20200604_1211,8,30,12:27:36.148,Ez,nasion-ear,-73.64846,38.50534,0.2130521,0.01710477,-0.01800675,-0.9190921,0.3932593,no,NULL,NULL,none
+2.5.3.50294,UniFreiburg_test1,20200604_1211,10,30,12:28:08.304,Ez,nasion-ear,-80.75386,89.48058,47.76973,0.2640536,-0.2712467,-0.6463051,0.6625638,no,NULL,NULL,none
+2.5.3.50294,UniFreiburg_test1,20200604_1211,12,30,12:28:35.320,,,,,,,,,,,,,
